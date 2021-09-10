@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- Author: Shubham Kumar -->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="res/favicon-16x16.png">
+        <title>Homepage</title>
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <!-- Navigation bar logo -->
+            <a class="navbar-brand" href="#">
+                <img src="res/onlinelogomaker-071021-0150-4526-2000-transparent.png" width="30" height="30" alt="logo" loading="lazy">
+            </a>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobbies.html">HOBBIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="asteroids.html">ASTEROIDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="https://www.google.com/search" method="get">
+                    <input name="q" class="form-control mr-sm-2" type="search" placeholder="Google">
+                    <button class="btn btn-primary btn-outline-success my-2 my-sm-0" type="submit" style="color:white;">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div id="header" class="jumbotron rounded-0" style="margin-bottom: 0.5rem;">
+            <h1>shubham</h1>
+        </div>
+
+        <!-- Content -->
+        <div id="mid_part" class="container-md">
+            <div id="name_section">
+                <h3>What's your name?</h3>
+                <div class="input-group mb-3">
+                    <input autofocus id="name" type="text" class="form-control" placeholder="Name">
+                    <div class="input-group-append">
+                        <button id="submit" class="btn btn-primary" type="button" onclick="proceed()">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sayhello" class="jumbotron" style="display:none;"></div>
+            <div class="lead text-justify" id="dummytext">
+                <p>
+                    Most people would find the picture of our universe as an infinite tower
+                    of tortoises rather ridiculous, but why do we think we know better?
+                    What do we know about the universe, and how do we know it? Where did
+                    the universe come from, and where is it going?
+                </p>
+                <p>
+                    Did the universe have
+                    a beginning, and if so, what happened before then? Will it ever come
+                    to an end? Can we go back in time? Recent breakthroughs in physics,
+                    made possible in part by fantastic new technologies, suggest answers to
+                    some of these longstanding questions.
+                </p>
+            </div>
+            <blockquote id="dummyquote" class="blockquote text-justify">
+                <p>
+                    Someday these answers may seem as obvious to us as the earth orbiting
+                    the sun - or perhaps as ridiculous as a tower of tortoises. Only
+                    time (whatever that may be) will tell.
+                </p>
+                <p class="text-right" style="color: #292b2c; font-weight: 500;"> - A BRIEF HISTORY OF TIME, Stephen Hawking</p>
+            </blockquote>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid rounded-0">
+            <div id="footer" class="row" style="padding: 1.5%;">
+                <div class="col" style="padding-top: 1%">
+                    <ul class="ul-no-bullets">
+                        <li class="list-items">
+                            <div style="padding-top: 3%">
+                                <img src="res/ig.png" width="28" height="28" alt="instagram icon">
+                                <a class="inline-block align-middle" style="color: #fff;" href="https://www.instagram.com/xshubh4m">Instagram</a>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div>
+                                <img src="res/tw.png" width="28" height="28" alt="twitter icon">
+                                <a class="inline-block align-middle" style="color: #fff;" href="https://www.twitter.com/shubhxt">Twitter</a>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div>
+                                <img src="res/gh.png" width="28" height="28" alt="github icon">
+                                <a class="inline-block align-middle" style="color: #fff;" href="https://www.github.com/xshubham">Github</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col" style="padding-top: 1%">
+                    <ul class="ul-no-bullets">
+                        <li class="list-items">
+                            <div style="padding-top: 3%">
+                                <img src="res/yt.png" width="28" height="28" alt="youtube icon">
+                                <a class="inline-block align-middle" style="color: #fff;" href="https://www.youtube.com/c/PeerProgression">Youtube</a>
+                            </div>
+                        </li>
+                        <li class="list-items">
+                            <div>
+                                <img src="res/sg.png" width="28" height="28" alt="suggestions">
+                                <a class="inline-block align-middle"  style="color: #fff;" href="mailto:shubhamxst@gmail.com">Suggestions/Queries</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

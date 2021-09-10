@@ -1,0 +1,51 @@
+/* Author: Shubham Kumar */
+
+#header {
+    background-image: url("res/cover.png");
+    background-repeat: no-repeat;
+}
+
+.jumbotron {
+    color: #fff;
+    background-color: #292b2c;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 72px;
+}
+
+.navbar {
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#footer {
+    color: #fff;
+}
+
+.ul-no-bullets {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+.list-items {
+    padding-bottom: 12px;
+}
+
+.container-fluid {
+    background-color: #292b2c;
+    height: auto;
+}
+
+#me_header {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #292b2c;
+}
