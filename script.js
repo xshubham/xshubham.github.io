@@ -27,3 +27,16 @@ function proceed() {
     $('#sayhello').html(html);
     $('#sayhello').css({'display' : '', 'background-color' : '#fff', 'color' : '#000'});
 }
+
+document.addEventListener("DOMContentLoaded", function (){
+  $.get("https://api.quotable.io/random", function (data) {
+    if (data) {
+      var content = data['content'];
+      var author = data['author'];
+      var html = "";
+      html = "<p>" + content + "</p>";
+      html += "<p class=\"text-right\" style=\"color: #292b2c; font-weight: 500;\"> - " + author + "</p>";
+      document.getElementById("quote").innerHTML = html;
+    }
+  });
+});
