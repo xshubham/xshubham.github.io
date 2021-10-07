@@ -28,11 +28,13 @@ function proceed() {
     $('#sayhello').css({'display' : '', 'background-color' : '#fff', 'color' : '#000'});
 }
 
+// ajax call for getting quotes from a rest api
 document.addEventListener("DOMContentLoaded", function (){
-  $.get("https://api.quotable.io/random", function (data) {
+  // old api: https://api.quotable.io/random
+  $.get("https://quotes.rest/qod", function (data) {
     if (data) {
-      var content = data['content'];
-      var author = data['author'];
+      var content = data.contents.quotes[0].quote;
+      var author = data.contents.quotes[0].author;
       var html = "";
       html = "<p>" + content + "</p>";
       html += "<p class=\"text-right\" style=\"color: #292b2c; font-weight: 500;\"> - " + author + "</p>";
