@@ -49,3 +49,12 @@ h1 {
     text-align: center;
     color: #292b2c;
 }
+
+.last-updated {
+    display: inline-block;
+    font-weight: 600;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+    border-radius: 2px;
+    box-shadow: 4px 4px 12px #43434350;
+}
