@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: #e4bedd;
+}
+
+a {
+    color: orange;
+}
+
+a:hover {
+    color: red;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.modal {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #5f2ceb;
+    border-radius: 0.5rem;
+    padding: 1.5rem 1em;
+}
+
+.notice {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: lowercase;
+}
+
+.p {
+    box-sizing: border-box;
+    height: 120px;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p * {
+    height: 32px;
+    width: 32px;
+    border-radius: 4.5rem;
+    margin: 0.1rem;
+}
+
+.a {
+    background-color: blue;
+}
+
+.b {
+    background-color: green;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 1.5rem;
+        line-height: 1.2em;
+        padding: 0 1rem;
+    }
+    .modal, .p {
+        width: 100%;
+    }
+    .notice {
+        font-size: 2rem;
+    }
+}

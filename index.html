@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shubham Kumar</title>
+</head>
+<body>
+    <main>
+        <div class="modal">
+            <span class="notice">Hey, there!</span><br>
+            thank you for visiting
+            <br><br>
+            I'm recreating this website...<br>
+            and it seems like <span class="notice">it would take longer time</span> than I expected<br><br>
+            please, feel free to <a href="mailto:shubhamxst@gmail.com">send an email</a> to me.
+        </div>
+        <div class="p">
+            <div class="a"></div>
+            <div class="b"></div>
+        </div>
+    </main>
+    <script>
+        flexDirectionValues = ['row', 'column', 'row-reverse', 'column-reverse']
+        
+        function animate() {
+            let el = document.getElementsByClassName('p')[0];
+            let fdir = getComputedStyle(el).flexDirection;
+            let i = (flexDirectionValues.indexOf(fdir) + 1) % flexDirectionValues.length;
+            el.style.flexDirection = flexDirectionValues[i];
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setInterval("animate()", 1000)
+        })
+    </script>
+</body>
+</html>
